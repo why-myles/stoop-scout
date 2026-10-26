@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stoop Scout — NYC stooping finds, live</title>
+<meta name="description" content="Fresh finds from @stoopingnyc, matched to your wishlist and your corners of NYC. Refreshed about every 30 minutes.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root{
+    --bg:#faf6ef; --card:#ffffff; --ink:#23201b; --muted:#7a7264;
+    --accent:#c2501e; --accent-soft:#fbe9dd; --line:#e8e0d2;
+    --good:#1d7a4f; --chip:#f1ead9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+  header{padding:20px 16px 6px;max-width:860px;margin:0 auto}
+  h1{margin:0;font-size:28px;letter-spacing:-.02em}
+  h1 .stoop{color:var(--accent)}
+  .sub{color:var(--muted);margin:6px 0 0;font-size:14px;line-height:1.45}
+  .sub b{color:var(--ink)}
+  main{max-width:860px;margin:0 auto;padding:10px 16px 40px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+  .card h2{margin:0 0 4px;font-size:17px}
+  .card .hint{color:var(--muted);font-size:13px;margin:0 0 12px;line-height:1.45}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:7px 13px;font-size:14px;cursor:pointer;user-select:none}
+  .chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+  .chip .x{margin-left:6px;font-weight:700}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  input[type=text]{flex:1;min-width:180px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff}
+  button{background:var(--accent);color:#fff;border:0;border-radius:10px;padding:10px 14px;font-size:14px;cursor:pointer}
+  button.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+  button:disabled{opacity:.55}
+  .anchor{border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
+  .anchor .nm{font-weight:600;margin-bottom:8px}
+  .anchor .st{font-size:13px;color:var(--muted);margin-top:8px}
+  .anchor .st.ok{color:var(--good)}
+  input[type=range]{width:100%}
+  .radiusval{font-weight:600}
+  #map{height:340px;border-radius:14px;border:1px solid var(--line);margin:14px 0;z-index:0}
+  .find{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0;background:#fff}
+  .find.match{border-color:var(--accent);background:#fffaf5}
+  .find .t{font-weight:600;font-size:15px;line-height:1.35}
+  .find .meta{color:var(--muted);font-size:13px;margin-top:4px;line-height:1.5}
+  .tag{display:inline-block;background:var(--accent-soft);color:var(--accent);border-radius:6px;padding:1px 7px;font-size:12px;font-weight:600;margin-right:6px;text-transform:capitalize}
+  .dist{display:inline-block;background:#e7f3ec;color:var(--good);border-radius:6px;padding:1px 7px;font-size:12px;font-weight:600}
+  .dist.unknown{background:#f1ead9;color:var(--muted)}
+  .find a{color:var(--accent);font-weight:600;text-decoration:none;font-size:14px}
+  .find a:hover{text-decoration:underline}
+  .empty{color:var(--muted);font-size:14px;padding:8px 0;line-height:1.5}
+  footer{max-width:860px;margin:0 auto;padding:0 16px 34px;color:var(--muted);font-size:12.5px;line-height:1.55}
+  .toprow{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+  .upd{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="stoop">Stoop</span> Scout</h1>
+  <p class="sub">Free stuff hits NYC curbs all day — <b>@stoopingnyc</b> spots it, this page watches it for you. Set your wishlist and your corners below, and finds near you get flagged. The feed refreshes about every <b>30 minutes</b>.</p>
+</header>
+<main>
+  <section class="card" id="setup">
+    <div class="toprow">
+      <h2>Your stoop radar</h2>
+      <span class="upd" id="updated">Loading finds…</span>
+    </div>
+    <p class="hint">Everything you set here is saved only on this device — nobody else sees it, and everyone's page is their own.</p>
+
+    <h2 style="font-size:15px;margin-top:14px">What are you hunting?</h2>
+    <div class="chips" id="catChips"></div>
+    <div class="row" style="margin-top:10px">
+      <input type="text" id="kwInput" placeholder="Add your own keyword — e.g. vinyl, espresso, mid-century">
+      <button id="kwAdd" class="ghost">Add</button>
+    </div>
+    <div class="chips" id="kwChips" style="margin-top:8px"></div>
+
+    <h2 style="font-size:15px;margin-top:18px">Your corners</h2>
+    <p class="hint">Add the spots you actually move around — home, work, a partner's place. Finds get measured from the nearest one.</p>
+    <div id="anchors"></div>
+    <button id="addAnchor" class="ghost">+ Add a spot</button>
+
+    <h2 style="font-size:15px;margin-top:18px">How far will you run? <span class="radiusval" id="radiusVal"></span></h2>
+    <input type="range" id="radius" min="0.25" max="5" step="0.25">
+  </section>
+
+  <div id="map"></div>
+
+  <section class="card">
+    <h2>Matches for you</h2>
+    <div id="matches"></div>
+  </section>
+
+  <section class="card">
+    <h2>Latest finds</h2>
+    <div id="allFinds"></div>
+  </section>
+</main>
+<footer>
+  Finds come from <b>@stoopingnyc</b> on Instagram — tap a find to see the original post and exact spot. Stooping is first come, first served: if it's gone when you get there, it found a home. Your wishlist, spots, and radius live only in this browser on this device.
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const CATEGORIES = ["table","seating","lamp","storage","mirror","rug","bed","kitchen","plant","bike","electronics","art","books","clothing","toys","misc"];
+const LS_KEY = "stoopscout.prefs.v1";
+const DEFAULTS = { cats: [], keywords: [], radius: 1.5,
+  anchors: [ {name:"Home", address:"", lat:null, lng:null}, {name:"Work", address:"", lat:null, lng:null} ] };
+
+let prefs = loadPrefs();
+let finds = [];
+let map, markersLayer;
+
+function loadPrefs(){
+  try{
+    const raw = localStorage.getItem(LS_KEY);
+    if(!raw) return structuredClone(DEFAULTS);
+    const p = JSON.parse(raw);
+    return { cats: p.cats||[], keywords: p.keywords||[], radius: p.radius||1.5,
+             anchors: (p.anchors&&p.anchors.length?p.anchors:structuredClone(DEFAULTS.anchors)) };
+  }catch(e){ return structuredClone(DEFAULTS); }
+}
+function savePrefs(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(prefs)); }catch(e){} }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function haversineMi(lat1, lon1, lat2, lon2){
+  const R = 3958.8, toRad = d => d*Math.PI/180;
+  const dLat = toRad(lat2-lat1), dLon = toRad(lon2-lon1);
+  const a = Math.sin(dLat/2)**2 + Math.cos(toRad(lat1))*Math.cos(toRad(lat2))*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.sqrt(a));
+}
+function nearestAnchor(f){
+  let best = null;
+  for(const a of prefs.anchors){
+    if(a.lat==null || a.lng==null || f.lat==null || f.lng==null) continue;
+    const d = haversineMi(a.lat, a.lng, f.lat, f.lng);
+    if(!best || d < best.d) best = { d, name: a.name };
+  }
+  return best;
+}
+function wishlistHit(f){
+  if(prefs.cats.includes(f.category)) return true;
+  const hay = ((f.item||"") + " " + (f.caption_summary||"")).toLowerCase();
+  return prefs.keywords.some(k => k && hay.includes(k.toLowerCase()));
+}
+function isMatch(f){
+  if(!wishlistHit(f)) return false;
+  if(f.lat==null || f.lng==null) return true;              // distance unknown — still flag it
+  const near = nearestAnchor(f);
+  if(!near) return true;                                     // no spots set yet — flag, distance unknown
+  return near.d <= prefs.radius;
+}
+
+/* ---------- setup UI ---------- */
+function renderCats(){
+  const el = document.getElementById("catChips");
+  el.innerHTML = "";
+  for(const c of CATEGORIES){
+    const b = document.createElement("button");
+    b.className = "chip" + (prefs.cats.includes(c) ? " on" : "");
+    b.textContent = c;
+    b.onclick = () => {
+      const i = prefs.cats.indexOf(c);
+      if(i >= 0) prefs.cats.splice(i,1); else prefs.cats.push(c);
+      savePrefs(); renderCats(); renderFinds(); renderMap();
+    };
+    el.appendChild(b);
+  }
+}
+function renderKeywords(){
+  const el = document.getElementById("kwChips");
+  el.innerHTML = "";
+  prefs.keywords.forEach((k, i) => {
+    const b = document.createElement("button");
+    b.className = "chip on";
+    b.innerHTML = esc(k) + '<span class="x">×</span>';
+    b.onclick = () => { prefs.keywords.splice(i,1); savePrefs(); renderKeywords(); renderFinds(); };
+    el.appendChild(b);
+  });
+}
+function addKeyword(){
+  const inp = document.getElementById("kwInput");
+  const v = inp.value.trim();
+  if(!v) return;
+  if(!prefs.keywords.some(k => k.toLowerCase() === v.toLowerCase())) prefs.keywords.push(v);
+  inp.value = "";
+  savePrefs(); renderKeywords(); renderFinds();
+}
+async function geocode(q){
+  const url = "https://nominatim.openstreetmap.org/search?format=json&limit=1&q=" + encodeURIComponent(q);
+  const r = await fetch(url, { headers: { "Accept": "application/json" } });
+  const j = await r.json();
+  if(!j || !j.length) return null;
+  return { lat: parseFloat(j[0].lat), lng: parseFloat(j[0].lon) };
+}
+function renderAnchors(){
+  const el = document.getElementById("anchors");
+  el.innerHTML = "";
+  prefs.anchors.forEach((a, i) => {
+    const div = document.createElement("div");
+    div.className = "anchor";
+    div.innerHTML =
+      '<div class="nm">' + esc(a.name) + '</div>' +
+      '<div class="row"><input type="text" placeholder="Street address or intersection — e.g. 245 Bergen St, Brooklyn" value="' + esc(a.address) + '">' +
+      '<button>Set spot</button>' +
+      '<button class="ghost geo">Use my location</button>' +
+      (prefs.anchors.length > 1 ? '<button class="ghost rm">Remove</button>' : '') +
+      '</div><div class="st ' + (a.lat!=null ? "ok" : "") + '">' +
+      (a.lat!=null ? "Pinned ✓ — distances measured from here." : "Not pinned yet — add the address and tap Set spot.") + '</div>';
+    const input = div.querySelector("input");
+    const btn = div.querySelector("button");
+    const setIt = async () => {
+      const v = input.value.trim();
+      if(!v) return;
+      btn.disabled = true; btn.textContent = "Finding…";
+      let q = v;
+      if(!/new york|brooklyn|queens|bronx/i.test(q)) q += ", New York, NY";
+      const hit = await geocode(q).catch(() => null);
+      btn.disabled = false; btn.textContent = "Set spot";
+      if(hit){ a.address = v; a.lat = hit.lat; a.lng = hit.lng; }
+      else { div.querySelector(".st").textContent = "Couldn't find that one — try the nearest intersection, e.g. Bergen St & Court St, Brooklyn."; div.querySelector(".st").className = "st"; a.address = v; }
+      savePrefs(); renderAnchors(); renderFinds(); renderMap();
+    };
+    btn.onclick = setIt;
+    input.addEventListener("keydown", e => { if(e.key === "Enter") setIt(); });
+    input.addEventListener("change", () => { a.address = input.value; savePrefs(); });
+    div.querySelector(".geo").onclick = () => {
+      if(!navigator.geolocation) return;
+      navigator.geolocation.getCurrentPosition(pos => {
+        a.lat = pos.coords.latitude; a.lng = pos.coords.longitude;
+        if(!a.address) a.address = "My location";
+        savePrefs(); renderAnchors(); renderFinds(); renderMap();
+      });
+    };
+    const rm = div.querySelector(".rm");
+    if(rm) rm.onclick = () => { prefs.anchors.splice(i,1); savePrefs(); renderAnchors(); renderFinds(); renderMap(); };
+    el.appendChild(div);
+  });
+}
+document.getElementById("addAnchor").onclick = () => {
+  prefs.anchors.push({ name: "Spot " + (prefs.anchors.length+1), address: "", lat: null, lng: null });
+  savePrefs(); renderAnchors();
+};
+document.getElementById("kwAdd").onclick = addKeyword;
+document.getElementById("kwInput").addEventListener("keydown", e => { if(e.key === "Enter") addKeyword(); });
+const radiusEl = document.getElementById("radius");
+function renderRadius(){ radiusEl.value = prefs.radius; document.getElementById("radiusVal").textContent = "— within " + prefs.radius + " mi"; }
+radiusEl.addEventListener("input", () => { prefs.radius = parseFloat(radiusEl.value); renderRadius(); savePrefs(); renderFinds(); renderMap(); });
+
+/* ---------- finds ---------- */
+function findCard(f, matched){
+  const near = (f.lat!=null && f.lng!=null) ? nearestAnchor(f) : null;
+  let dist;
+  if(f.lat==null || f.lng==null) dist = '<span class="dist unknown">distance unknown</span>';
+  else if(near) dist = '<span class="dist">' + near.d.toFixed(1) + ' mi from ' + esc(near.name) + '</span>';
+  else dist = '<span class="dist unknown">add a spot to see distance</span>';
+  const where = [f.location_text, f.neighborhood].filter(Boolean).join(" · ");
+  return '<div class="find' + (matched ? " match" : "") + '">' +
+    '<div class="t"><span class="tag">' + esc(f.category) + '</span>' + esc(f.item) + '</div>' +
+    '<div class="meta">' + (where ? esc(where) + " &nbsp;·&nbsp; " : "") + dist + '</div>' +
+    '<div style="margin-top:6px"><a href="' + esc(f.url) + '" target="_blank" rel="noopener">See the post →</a></div></div>';
+}
+function renderFinds(){
+  const mEl = document.getElementById("matches");
+  const aEl = document.getElementById("allFinds");
+  const matched = finds.filter(isMatch);
+  const matchedIds = new Set(matched.map(f => f.id));
+  if(!prefs.cats.length && !prefs.keywords.length){
+    mEl.innerHTML = '<div class="empty">Pick what you\'re hunting above — categories or your own keywords — and matching finds near your spots will land here.</div>';
+  } else if(!matched.length){
+    mEl.innerHTML = '<div class="empty">Nothing matches your wishlist within your radius right now. Stooping moves fast — check back soon, or widen the radius.</div>';
+  } else {
+    const sorted = [...matched].sort((x, y) => {
+      const nx = nearestAnchor(x), ny = nearestAnchor(y);
+      return (nx ? nx.d : 999) - (ny ? ny.d : 999);
+    });
+    mEl.innerHTML = sorted.map(f => findCard(f, true)).join("");
+  }
+  aEl.innerHTML = finds.length ? finds.map(f => findCard(f, matchedIds.has(f.id))).join("")
+                               : '<div class="empty">No finds loaded yet.</div>';
+}
+function renderMap(){
+  if(!window.L) return;
+  if(!map){
+    map = L.map("map").setView([40.72, -73.98], 11);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "© OpenStreetMap contributors", maxZoom: 19 }).addTo(map);
+    markersLayer = L.layerGroup().addTo(map);
+  }
+  markersLayer.clearLayers();
+  const matchedIds = new Set(finds.filter(isMatch).map(f => f.id));
+  for(const f of finds){
+    if(f.lat==null || f.lng==null) continue;
+    const m = L.circleMarker([f.lat, f.lng], {
+      radius: matchedIds.has(f.id) ? 9 : 6,
+      color: matchedIds.has(f.id) ? "#c2501e" : "#7a7264",
+      fillColor: matchedIds.has(f.id) ? "#c2501e" : "#b9ae97",
+      fillOpacity: .85, weight: 2
+    });
+    m.bindPopup("<b>" + esc(f.item) + "</b><br>" + esc(f.location_text || "") + '<br><a href="' + esc(f.url) + '" target="_blank" rel="noopener">See the post</a>');
+    markersLayer.addLayer(m);
+  }
+  for(const a of prefs.anchors){
+    if(a.lat==null || a.lng==null) continue;
+    const m = L.marker([a.lat, a.lng]);
+    m.bindPopup("<b>" + esc(a.name) + "</b>");
+    markersLayer.addLayer(m);
+    L.circle([a.lat, a.lng], { radius: prefs.radius * 1609.34, color: "#c2501e", weight: 1, fillOpacity: .05 }).addTo(markersLayer);
+  }
+}
+async function loadFeed(){
+  try{
+    const r = await fetch("finds.json?t=" + Date.now(), { cache: "no-store" });
+    const j = await r.json();
+    finds = j.finds || [];
+    const el = document.getElementById("updated");
+    if(j.generated_at){
+      const d = new Date(j.generated_at);
+      el.textContent = "Feed updated " + d.toLocaleString("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "2-digit" }) + " ET · " + finds.length + " finds";
+    }
+  }catch(e){
+    document.getElementById("updated").textContent = "Couldn't load the finds feed — pull to refresh in a bit.";
+  }
+  renderFinds(); renderMap();
+}
+
+renderCats(); renderKeywords(); renderAnchors(); renderRadius();
+loadFeed();
+</script>
+</body>
+</html>
