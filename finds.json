@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-10-27T19:08:06.085850-04:00",
+ "generated_at": "2026-10-27T19:38:29.866486-04:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18032734916869903",
+   "item": "Great rug out on Ingraham st between porter and knickerbocker",
+   "category": "rug",
+   "caption_summary": "Great rug out on Ingraham st between porter and knickerbocker",
+   "location_text": "Ingraham st",
+   "neighborhood": "",
+   "lat": 40.70758,
+   "lng": -73.92886,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4017499856304293667"
+  },
   {
    "id": "17955317544039459",
    "item": "536 Putnam Ave BK practically unused ikea chest of drawers",
@@ -540,17 +551,6 @@
    "lat": 40.78906,
    "lng": -73.97033,
    "url": "https://www.instagram.com/stories/stoopingnyc/4016076897207339112"
-  },
-  {
-   "id": "18130350601833724",
-   "item": "On prospect Ave in front of St",
-   "category": "misc",
-   "caption_summary": "On prospect Ave in front of St. John’s deli in Windsor terrace",
-   "location_text": "prospect Ave",
-   "neighborhood": "",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.instagram.com/stories/stoopingnyc/4016010560330041731"
   }
  ]
 }
