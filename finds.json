@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-10-28T13:37:20.598534-04:00",
+ "generated_at": "2026-10-28T14:08:38.747162-04:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18440237242182681",
+   "item": "Awesome table",
+   "category": "table",
+   "caption_summary": "Awesome table! Corner of Guernsey and Norman in Greenpoint",
+   "location_text": "Guernsey and Norman",
+   "neighborhood": "Greenpoint",
+   "lat": 40.72488,
+   "lng": -73.95343,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4018053358345867198"
+  },
   {
    "id": "18032734916869903",
    "item": "Great rug out on Ingraham st between porter and knickerbocker",
@@ -540,17 +551,6 @@
    "lat": null,
    "lng": null,
    "url": "https://www.instagram.com/reel/DdU8K1CsZ2Q/"
-  },
-  {
-   "id": "17966298359980954",
-   "item": "Beautiful wooden bookshelf or whatever you want it to be; looks fully in tact",
-   "category": "storage",
-   "caption_summary": "Beautiful wooden bookshelf or whatever you want it to be; looks fully in tact. West 90th between CPW and Columbus",
-   "location_text": "90th between CPW and Columbus",
-   "neighborhood": "",
-   "lat": 40.78906,
-   "lng": -73.97033,
-   "url": "https://www.instagram.com/stories/stoopingnyc/4016076897207339112"
   }
  ]
 }
