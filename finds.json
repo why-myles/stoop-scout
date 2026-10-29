@@ -1,7 +1,29 @@
 {
- "generated_at": "2026-10-29T18:38:02.704129-04:00",
+ "generated_at": "2026-10-29T19:11:19.593960-04:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18132975355762243",
+   "item": "A perfect display for ____",
+   "category": "misc",
+   "caption_summary": "A perfect display for ____. On 26th and 7th.",
+   "location_text": "26th and 7th",
+   "neighborhood": "",
+   "lat": 40.74599,
+   "lng": -73.99426,
+   "url": "https://www.instagram.com/p/DfGIpQrsmVa/"
+  },
+  {
+   "id": "18170526466462666",
+   "item": "Are you more excited about old school radio or the ninja coffee maker",
+   "category": "kitchen",
+   "caption_summary": "Are you more excited about old school radio or the ninja coffee maker? berry and N7th",
+   "location_text": "berry and N7th",
+   "neighborhood": "Brooklyn",
+   "lat": 40.71863,
+   "lng": -73.95901,
+   "url": "https://www.instagram.com/p/DfGI2r5MBLj/"
+  },
   {
    "id": "18132847666774761",
    "item": "Cute and looks like it rocks or rotates",
@@ -529,28 +551,6 @@
    "lat": 40.7776,
    "lng": -73.95909,
    "url": "https://www.instagram.com/p/De76Fj3MOWm/"
-  },
-  {
-   "id": "18152889862470487",
-   "item": "What are you using this for",
-   "category": "misc",
-   "caption_summary": "What are you using this for??? Morton Street just west of Bedford Street and seventh Avenue.",
-   "location_text": "Bedford Street and seventh Avenue",
-   "neighborhood": "",
-   "lat": 40.731,
-   "lng": -74.00463,
-   "url": "https://www.instagram.com/p/De7150TMEPX/"
-  },
-  {
-   "id": "18195448129400008",
-   "item": "Nice couch on 5th Ave and 10th street in bk",
-   "category": "seating",
-   "caption_summary": "Nice couch on 5th Ave and 10th street in bk!",
-   "location_text": "5th Ave and 10th street",
-   "neighborhood": "Brooklyn",
-   "lat": 40.66857,
-   "lng": -73.98679,
-   "url": "https://www.instagram.com/p/De7lzR_MkmD/"
   }
  ]
 }
