@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-10-29T18:08:19.225781-04:00",
+ "generated_at": "2026-10-29T18:38:02.704129-04:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18132847666774761",
+   "item": "Cute and looks like it rocks or rotates",
+   "category": "misc",
+   "caption_summary": "Cute and looks like it rocks or rotates. Hudson between 11th and Perry st.",
+   "location_text": "Hudson between 11th and Perry st",
+   "neighborhood": "West Village",
+   "lat": 40.73513,
+   "lng": -74.00607,
+   "url": "https://www.instagram.com/p/DfF-rkMMe7x/"
+  },
   {
    "id": "18137247874737420",
    "item": "Someone’s home office needs a pink desk chair",
@@ -540,17 +551,6 @@
    "lat": 40.66857,
    "lng": -73.98679,
    "url": "https://www.instagram.com/p/De7lzR_MkmD/"
-  },
-  {
-   "id": "18107672684568269",
-   "item": "The little guy looks straight outta Minecraft",
-   "category": "misc",
-   "caption_summary": "The little guy looks straight outta Minecraft. 12th st. between 6th and 7th ave",
-   "location_text": "12th st",
-   "neighborhood": "",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.instagram.com/p/De5PfV7M2Vn/"
   }
  ]
 }
