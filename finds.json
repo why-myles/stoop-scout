@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-10-30T12:07:40.858776-04:00",
+ "generated_at": "2026-10-30T12:38:43.375604-04:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "17916777261540809",
+   "item": "Guys",
+   "category": "misc",
+   "caption_summary": "Guys. Holy smokes what an incredible haul. Individual pics in the scroll but also there is more than pictured! Park Ave. between 91st and 92nd St. on the east side of the street mid block",
+   "location_text": "92nd St",
+   "neighborhood": "",
+   "lat": 40.78404,
+   "lng": -73.95453,
+   "url": "https://www.instagram.com/p/DfH_N1QHPnU/"
+  },
   {
    "id": "18209883511369705",
    "item": "We obviously have to stop sleeping",
@@ -540,17 +551,6 @@
    "lat": 40.67707,
    "lng": -73.98631,
    "url": "https://www.instagram.com/p/De2efRUsNR8/"
-  },
-  {
-   "id": "18123508985470603",
-   "item": "Working rowing machine on the corner of Calyer and Guernsey in Greenpoint",
-   "category": "electronics",
-   "caption_summary": "Working rowing machine on the corner of Calyer and Guernsey in Greenpoint!",
-   "location_text": "Calyer and Guernsey",
-   "neighborhood": "Greenpoint",
-   "lat": 40.72756,
-   "lng": -73.95498,
-   "url": "https://www.instagram.com/p/De9YxLMscji/"
   }
  ]
 }
