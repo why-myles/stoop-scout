@@ -1,7 +1,29 @@
 {
- "generated_at": "2026-10-30T08:37:26.238788-04:00",
+ "generated_at": "2026-10-30T09:07:53.506254-04:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18209883511369705",
+   "item": "We obviously have to stop sleeping",
+   "category": "misc",
+   "caption_summary": "We obviously have to stop sleeping. From the night edition of stooping… probably still there? 104 thompson st.",
+   "location_text": "104 Thompson St",
+   "neighborhood": "SoHo",
+   "lat": 40.72555,
+   "lng": -74.00194,
+   "url": "https://www.instagram.com/p/DfHmjJZMvgA/"
+  },
+  {
+   "id": "18107864420208312",
+   "item": "Another middle of the night gem from park slope",
+   "category": "misc",
+   "caption_summary": "Another middle of the night gem from park slope! 81 8th Ave",
+   "location_text": "81 8th Ave",
+   "neighborhood": "Park Slope",
+   "lat": 40.67317,
+   "lng": -73.97297,
+   "url": "https://www.instagram.com/p/DfHmtXAswBn/"
+  },
   {
    "id": "18132975355762243",
    "item": "A perfect display for ____",
@@ -529,28 +551,6 @@
    "lat": 40.72756,
    "lng": -73.95498,
    "url": "https://www.instagram.com/p/De9YxLMscji/"
-  },
-  {
-   "id": "18638883238000965",
-   "item": "Two halves of what the Stooper says is an amaaaazing table",
-   "category": "table",
-   "caption_summary": "Two halves of what the Stooper says is an amaaaazing table! 27th bt 6th and 7th. Closer to 7th.",
-   "location_text": "27th bt 6th and 7th",
-   "neighborhood": "",
-   "lat": 40.74661,
-   "lng": -73.99379,
-   "url": "https://www.instagram.com/p/De796_wmj73/"
-  },
-  {
-   "id": "18063302819795722",
-   "item": "Oh how cute are you",
-   "category": "misc",
-   "caption_summary": "Oh how cute are you?!?! East 82nd street, between 2nd and 3rd.",
-   "location_text": "East 82nd street, between 2nd and 3rd",
-   "neighborhood": "",
-   "lat": 40.7776,
-   "lng": -73.95909,
-   "url": "https://www.instagram.com/p/De76Fj3MOWm/"
   }
  ]
 }
