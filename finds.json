@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-01T12:37:08.168932-05:00",
+ "generated_at": "2026-11-01T13:08:23.844865-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "17927328000203625",
+   "item": "14315 95th Avenue Jamaica NY 11435",
+   "category": "misc",
+   "caption_summary": "14315 95th Avenue Jamaica NY 11435",
+   "location_text": "95th Avenue Jamaica NY 11435",
+   "neighborhood": "",
+   "lat": 40.69768,
+   "lng": -73.80932,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4020963821592109845"
+  },
   {
    "id": "17923635756450767",
    "item": "These look comfortable seats for WATCHING the NYC Marathon",
@@ -540,17 +551,6 @@
    "lat": 40.79024,
    "lng": -73.97315,
    "url": "https://www.instagram.com/p/DelCHIvs-7j/"
-  },
-  {
-   "id": "18109099711946346",
-   "item": "Oooh",
-   "category": "table",
-   "caption_summary": "Oooh. Dining room table marked free at entrance to domino park in Williamsburg (Kent Ave & S 5th)",
-   "location_text": "Kent Ave & S",
-   "neighborhood": "Williamsburg",
-   "lat": 40.7126,
-   "lng": -73.96772,
-   "url": "https://www.instagram.com/p/DepNASZs67r/"
   }
  ]
 }
