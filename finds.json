@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-01T10:38:19.469117-05:00",
+ "generated_at": "2026-11-01T11:07:40.267600-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "17923635756450767",
+   "item": "These look comfortable seats for WATCHING the NYC Marathon",
+   "category": "table",
+   "caption_summary": "These look comfortable seats for WATCHING the NYC Marathon. 25 S Elliot place",
+   "location_text": "",
+   "neighborhood": "Brooklyn",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.instagram.com/p/DfNHVMKM7-m/"
+  },
   {
    "id": "17964642801238781",
    "item": "38th between park and Madison",
@@ -540,17 +551,6 @@
    "lat": 40.7126,
    "lng": -73.96772,
    "url": "https://www.instagram.com/p/DepNASZs67r/"
-  },
-  {
-   "id": "17930331396421167",
-   "item": "As cool as this looks on the street I’m sure it’ll look even better in your home",
-   "category": "misc",
-   "caption_summary": "As cool as this looks on the street I’m sure it’ll look even better in your home! 85th and Lex",
-   "location_text": "the street",
-   "neighborhood": "",
-   "lat": 40.77881,
-   "lng": -73.95608,
-   "url": "https://www.instagram.com/p/DerbCHKMXr3/"
   }
  ]
 }
