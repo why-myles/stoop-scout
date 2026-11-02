@@ -1,7 +1,40 @@
 {
- "generated_at": "2026-11-02T14:08:11.248923-05:00",
+ "generated_at": "2026-11-02T14:39:44.996279-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18115297505331861",
+   "item": "Greenwich Street and 11th street in WV",
+   "category": "misc",
+   "caption_summary": "Greenwich Street and 11th street in WV!!!",
+   "location_text": "Greenwich Street and 11th street",
+   "neighborhood": "",
+   "lat": 40.73321,
+   "lng": -74.00724,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4021725661775340895"
+  },
+  {
+   "id": "17975896332148781",
+   "item": "Williamsburg",
+   "category": "misc",
+   "caption_summary": "Williamsburg. S 2nd between berry and wythe",
+   "location_text": "2nd between berry and wythe",
+   "neighborhood": "Williamsburg",
+   "lat": 40.71419,
+   "lng": -73.96483,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4021726295375465071"
+  },
+  {
+   "id": "18201452773380146",
+   "item": "Williamsburg",
+   "category": "misc",
+   "caption_summary": "Williamsburg. S 4th between wythe and berry",
+   "location_text": "4th between wythe and berry",
+   "neighborhood": "Williamsburg",
+   "lat": 40.71278,
+   "lng": -73.96557,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4021726522010427763"
+  },
   {
    "id": "17927328000203625",
    "item": "14315 95th Avenue Jamaica NY 11435",
@@ -518,39 +551,6 @@
    "lat": 40.67753,
    "lng": -73.97637,
    "url": "https://www.instagram.com/p/DehC6aCMDr4/"
-  },
-  {
-   "id": "18356679751172470",
-   "item": "It’s 11:11 and someone is getting lucky",
-   "category": "misc",
-   "caption_summary": "It’s 11:11 and someone is getting lucky! 74th between Riverside & West End!",
-   "location_text": "74th between Riverside & West End",
-   "neighborhood": "",
-   "lat": 40.77966,
-   "lng": -73.98004,
-   "url": "https://www.instagram.com/p/DeiieHrM7AN/"
-  },
-  {
-   "id": "18142072750612667",
-   "item": "A @stoopingnyc first",
-   "category": "misc",
-   "caption_summary": "A @stoopingnyc first! Women’s condoms (expire in 2028) near 100 Jefferson Ave.",
-   "location_text": "100 Jefferson Ave",
-   "neighborhood": "Brooklyn",
-   "lat": 40.68278,
-   "lng": -73.95355,
-   "url": "https://www.instagram.com/p/Dejx8zBsSUE/"
-  },
-  {
-   "id": "18121405309951559",
-   "item": "Cute mid century chair w 90th btw West End and Riverside Drive",
-   "category": "seating",
-   "caption_summary": "Cute mid century chair w 90th btw West End and Riverside Drive!",
-   "location_text": "90th btw West End and Riverside Drive",
-   "neighborhood": "",
-   "lat": 40.79024,
-   "lng": -73.97315,
-   "url": "https://www.instagram.com/p/DelCHIvs-7j/"
   }
  ]
 }
