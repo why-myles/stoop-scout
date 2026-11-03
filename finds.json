@@ -1,7 +1,29 @@
 {
- "generated_at": "2026-11-03T10:07:02.031212-05:00",
+ "generated_at": "2026-11-03T10:37:14.697031-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18155805565528382",
+   "item": "149 East 62st Manhattan",
+   "category": "misc",
+   "caption_summary": "149 East 62st Manhattan",
+   "location_text": "149 East 62nd St",
+   "neighborhood": "Upper East Side",
+   "lat": 40.76398,
+   "lng": -73.96623,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4022332323959695439"
+  },
+  {
+   "id": "18110443781618162",
+   "item": "CAPTION CONTEST",
+   "category": "misc",
+   "caption_summary": "CAPTION CONTEST! Go!!!! 31st st between 6 and 7",
+   "location_text": "31st st between 6 and 7",
+   "neighborhood": "Chelsea",
+   "lat": 40.74908,
+   "lng": -73.99199,
+   "url": "https://www.instagram.com/p/DfSMLLwMGXr/"
+  },
   {
    "id": "18450790828122415",
    "item": "ONLY IN NYC",
@@ -529,28 +551,6 @@
    "lat": 40.75702,
    "lng": -73.96389,
    "url": "https://www.instagram.com/p/DeUb3BasdT6/"
-  },
-  {
-   "id": "17926576704424328",
-   "item": "All you could ask for on irving between Putnam and gates Ave",
-   "category": "misc",
-   "caption_summary": "All you could ask for on irving between Putnam and gates Ave. Brooklyn",
-   "location_text": "irving between Putnam and gates Ave",
-   "neighborhood": "Brooklyn",
-   "lat": 40.68289,
-   "lng": -73.95978,
-   "url": "https://www.instagram.com/p/DeU_z-Emr-v/"
-  },
-  {
-   "id": "18001817204808602",
-   "item": "A cutie sitting on Warren St",
-   "category": "misc",
-   "caption_summary": "A cutie sitting on Warren St. Between 4th and 5th Ave.",
-   "location_text": "5th Ave",
-   "neighborhood": "Brooklyn",
-   "lat": 40.68124,
-   "lng": -73.98055,
-   "url": "https://www.instagram.com/p/DeafIXLMQHh/"
   }
  ]
 }
