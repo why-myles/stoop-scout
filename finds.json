@@ -1,7 +1,40 @@
 {
- "generated_at": "2026-11-03T13:37:49.597312-05:00",
+ "generated_at": "2026-11-03T14:11:48.960561-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18003219171031804",
+   "item": "Kinda cool on 73 between Broadway and west end -@ericacoven",
+   "category": "misc",
+   "caption_summary": "Kinda cool on 73 between Broadway and west end -@ericacoven",
+   "location_text": "73 between Broad",
+   "neighborhood": "",
+   "lat": 40.77954,
+   "lng": -73.98172,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4022441370268700690"
+  },
+  {
+   "id": "18109771931251693",
+   "item": "Someone’s going to do amazing things here",
+   "category": "misc",
+   "caption_summary": "Someone’s going to do amazing things here! You? 22 E 13th St.",
+   "location_text": "E 13th St",
+   "neighborhood": "",
+   "lat": 40.73477,
+   "lng": -73.99309,
+   "url": "https://www.instagram.com/p/DfSkvSDMBo8/"
+  },
+  {
+   "id": "17992450976995335",
+   "item": "Never too early to start planning for next year",
+   "category": "electronics",
+   "caption_summary": "Never too early to start planning for next year. Evidently they were intended to fit over a tv screen. 63 Hamilton Terrace",
+   "location_text": "",
+   "neighborhood": "Brooklyn",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.instagram.com/p/DfSk_aqMghN/"
+  },
   {
    "id": "18155805565528382",
    "item": "149 East 62st Manhattan",
@@ -518,39 +551,6 @@
    "lat": null,
    "lng": null,
    "url": "https://www.instagram.com/p/DeRmaTSMx0e/"
-  },
-  {
-   "id": "18121915610514480",
-   "item": "As seen in the second pic, brand new perfectly working west elm lamp",
-   "category": "lamp",
-   "caption_summary": "As seen in the second pic, brand new perfectly working west elm lamp! 1st Place ￼ between Court and Smith streets.",
-   "location_text": "between Court and Smith street",
-   "neighborhood": "Brooklyn",
-   "lat": 40.68061,
-   "lng": -73.99793,
-   "url": "https://www.instagram.com/p/DeRnWIVHB3Q/"
-  },
-  {
-   "id": "18561866068073247",
-   "item": "Ain't no NY island like a kitchen island (no offense to Fire, Governors, Randall’s,…",
-   "category": "kitchen",
-   "caption_summary": "Ain't no NY island like a kitchen island (no offense to Fire, Governors, Randall’s, Rosevelt or Long Island). Columbus ave between 65th and 66th.",
-   "location_text": "",
-   "neighborhood": "",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.instagram.com/p/DeS3FLNMM6z/"
-  },
-  {
-   "id": "18116303252009443",
-   "item": "Happy stoop Saturday",
-   "category": "misc",
-   "caption_summary": "Happy stoop Saturday! 55th between 1st and 2nd Ave.",
-   "location_text": "55th between 1st and 2nd Ave",
-   "neighborhood": "",
-   "lat": 40.75702,
-   "lng": -73.96389,
-   "url": "https://www.instagram.com/p/DeUb3BasdT6/"
   }
  ]
 }
