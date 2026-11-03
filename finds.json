@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-03T17:38:03.864755-05:00",
+ "generated_at": "2026-11-03T18:08:12.573986-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18201474940385046",
+   "item": "On 3rd avenue, corner of 34st",
+   "category": "misc",
+   "caption_summary": "On 3rd avenue, corner of 34st",
+   "location_text": "3rd Avenue & 34th Street",
+   "neighborhood": "",
+   "lat": 40.74847,
+   "lng": -73.98426,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4022558995455820137"
+  },
   {
    "id": "18003219171031804",
    "item": "Kinda cool on 73 between Broadway and west end -@ericacoven",
@@ -540,17 +551,6 @@
    "lat": 40.67862,
    "lng": -73.9735,
    "url": "https://www.instagram.com/p/DePzWN_sD6Y/"
-  },
-  {
-   "id": "17970042114174022",
-   "item": "Rattan coffee table to add a little",
-   "category": "table",
-   "caption_summary": "Rattan coffee table to add a little ! to you space! Thompson and spring",
-   "location_text": "",
-   "neighborhood": "",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.instagram.com/p/DeRmaTSMx0e/"
   }
  ]
 }
