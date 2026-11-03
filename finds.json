@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-02T22:07:55.578409-05:00",
+ "generated_at": "2026-11-02T22:38:07.158788-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18450790828122415",
+   "item": "ONLY IN NYC",
+   "category": "misc",
+   "caption_summary": "ONLY IN NYC!!!!!! Some Stooper is getting lucky! Giant dice 😂 on 90 Washington St.",
+   "location_text": "90 Washington St",
+   "neighborhood": "",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.instagram.com/p/DfQ5EuYxwOQ/"
+  },
   {
    "id": "17993222304063024",
    "item": "On street in bushwick",
@@ -540,17 +551,6 @@
    "lat": 40.68124,
    "lng": -73.98055,
    "url": "https://www.instagram.com/p/DeafIXLMQHh/"
-  },
-  {
-   "id": "18212017747366490",
-   "item": "Photo friends",
-   "category": "misc",
-   "caption_summary": "Photo friends! Rolls of photo backdrop paper outside 9 west 19th st.",
-   "location_text": "west 19th st",
-   "neighborhood": "",
-   "lat": 40.73952,
-   "lng": -73.99213,
-   "url": "https://www.instagram.com/p/DefhMAeMvTT/"
   }
  ]
 }
