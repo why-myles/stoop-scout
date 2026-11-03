@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-02T21:38:26.115612-05:00",
+ "generated_at": "2026-11-02T22:07:55.578409-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "17993222304063024",
+   "item": "On street in bushwick",
+   "category": "misc",
+   "caption_summary": "On street in bushwick. Eldert st between knickerbocker and irving",
+   "location_text": "Eldert St between Knickerbocker and Irving",
+   "neighborhood": "Bushwick",
+   "lat": 40.69255,
+   "lng": -73.90732,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4021958251687200233"
+  },
   {
    "id": "18115297505331861",
    "item": "Greenwich Street and 11th street in WV",
@@ -540,17 +551,6 @@
    "lat": 40.73952,
    "lng": -73.99213,
    "url": "https://www.instagram.com/p/DefhMAeMvTT/"
-  },
-  {
-   "id": "18086125706697579",
-   "item": "Couch and its body guard",
-   "category": "seating",
-   "caption_summary": "Couch and its body guard. 151 6th Ave.",
-   "location_text": "6th Ave",
-   "neighborhood": "Brooklyn",
-   "lat": 40.67753,
-   "lng": -73.97637,
-   "url": "https://www.instagram.com/p/DehC6aCMDr4/"
   }
  ]
 }
