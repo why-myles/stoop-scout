@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-03T21:07:09.723916-05:00",
+ "generated_at": "2026-11-03T21:37:48.922730-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18640307107043496",
+   "item": "This chair (missing cushion) is really nice solid wood",
+   "category": "seating",
+   "caption_summary": "This chair (missing cushion) is really nice solid wood. It's on maspeth and kingsland near cooper park!",
+   "location_text": "Maspeth Ave & Kingsland Ave, near Cooper Park",
+   "neighborhood": "Greenpoint",
+   "lat": 40.7158,
+   "lng": -73.94003,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4022669930502932946"
+  },
   {
    "id": "18646868959041295",
    "item": "Artsy mirror and fancy chandelier",
@@ -540,17 +551,6 @@
    "lat": 40.72729,
    "lng": -73.99362,
    "url": "https://www.instagram.com/p/DeCu7Wys9vs/"
-  },
-  {
-   "id": "18106925015263279",
-   "item": "Stooper review",
-   "category": "misc",
-   "caption_summary": "Stooper review! This whole brownstone was emptied last night on 5th STREET btw 4th & 5th Avenue park slope",
-   "location_text": "5th STREET",
-   "neighborhood": "Park Slope",
-   "lat": 40.67279,
-   "lng": -73.98676,
-   "url": "https://www.instagram.com/p/DeFmkA6MsUS/"
   }
  ]
 }
