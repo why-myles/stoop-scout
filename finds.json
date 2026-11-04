@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-04T14:37:52.568357-05:00",
+ "generated_at": "2026-11-04T15:08:01.882694-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18048770822839221",
+   "item": "Really good condition (just need cleaning ) MCM dining table, and chairs on 93rd just…",
+   "category": "table",
+   "caption_summary": "Really good condition (just need cleaning ) MCM dining table, and chairs on 93rd just off Amsterdam on North side of the street",
+   "location_text": "93rd Street just off Amsterdam",
+   "neighborhood": "Upper West Side",
+   "lat": 40.79213,
+   "lng": -73.97177,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4023191309735002716"
+  },
   {
    "id": "18129724720633208",
    "item": "This is going to be REALLY useful to someone",
@@ -540,17 +551,6 @@
    "lat": 40.75638,
    "lng": -73.96435,
    "url": "https://www.instagram.com/p/Dd9_l7As7in/"
-  },
-  {
-   "id": "18112470800274798",
-   "item": "Big day for big couches",
-   "category": "seating",
-   "caption_summary": "Big day for big couches! West elm L Shape sectional on 11th street Greenwich village Between 5th and 6th",
-   "location_text": "11th street",
-   "neighborhood": "",
-   "lat": 40.73471,
-   "lng": -73.99666,
-   "url": "https://www.instagram.com/p/Dd-ANvtGgim/"
   }
  ]
 }
