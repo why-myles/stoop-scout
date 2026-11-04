@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-03T21:37:48.922730-05:00",
+ "generated_at": "2026-11-03T22:07:32.181812-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18115143596129167",
+   "item": "Shocking on many times we’ve now posted pelotons",
+   "category": "misc",
+   "caption_summary": "Shocking on many times we’ve now posted pelotons! North side of 22nd Street between 2nd & 3rd Avenues.",
+   "location_text": "22nd Street between 2nd & 3rd Avenues",
+   "neighborhood": "",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.instagram.com/p/DfTaMh2xsw6/"
+  },
   {
    "id": "18640307107043496",
    "item": "This chair (missing cushion) is really nice solid wood",
@@ -540,17 +551,6 @@
    "lat": 40.68417,
    "lng": -73.98396,
    "url": "https://www.instagram.com/p/DeCuqubsy8f/"
-  },
-  {
-   "id": "18091569113656922",
-   "item": "Maybe a @stoopingnyc first",
-   "category": "misc",
-   "caption_summary": "Maybe a @stoopingnyc first! And that’s saying something 😂. on great jones outside of lafayette!",
-   "location_text": "of lafayette",
-   "neighborhood": "",
-   "lat": 40.72729,
-   "lng": -73.99362,
-   "url": "https://www.instagram.com/p/DeCu7Wys9vs/"
   }
  ]
 }
