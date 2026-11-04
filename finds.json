@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-04T16:41:58.985566-05:00",
+ "generated_at": "2026-11-04T17:08:26.898222-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18643896682029565",
+   "item": "Great extendable table in front of 261 Prospect Place",
+   "category": "table",
+   "caption_summary": "Great extendable table in front of 261 Prospect Place.",
+   "location_text": "",
+   "neighborhood": "Brooklyn",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.instagram.com/p/DfVeLdJGoBl/"
+  },
   {
    "id": "18048770822839221",
    "item": "Really good condition (just need cleaning ) MCM dining table, and chairs on 93rd just…",
@@ -540,17 +551,6 @@
    "lat": 40.73539,
    "lng": -73.99827,
    "url": "https://www.instagram.com/p/Dd9-qHeMBI9/"
-  },
-  {
-   "id": "17932254573402111",
-   "item": "Table for two on 54th St between 1st and 2nd ave",
-   "category": "table",
-   "caption_summary": "Table for two on 54th St between 1st and 2nd ave!",
-   "location_text": "54th St between 1st and 2nd ave",
-   "neighborhood": "",
-   "lat": 40.75638,
-   "lng": -73.96435,
-   "url": "https://www.instagram.com/p/Dd9_l7As7in/"
   }
  ]
 }
