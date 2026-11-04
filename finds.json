@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-04T09:37:53.526737-05:00",
+ "generated_at": "2026-11-04T10:08:15.348772-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18129724720633208",
+   "item": "This is going to be REALLY useful to someone",
+   "category": "misc",
+   "caption_summary": "This is going to be REALLY useful to someone! Located at 142A Franklin Street!",
+   "location_text": "142A Franklin Street",
+   "neighborhood": "",
+   "lat": null,
+   "lng": null,
+   "url": "https://www.instagram.com/p/DfUueU7R8J9/"
+  },
   {
    "id": "18274295005305357",
    "item": "Gorgeous piece across the street from 28 Saint James Place near Pratt Institute",
@@ -540,17 +551,6 @@
    "lat": 40.73471,
    "lng": -73.99666,
    "url": "https://www.instagram.com/p/Dd-ANvtGgim/"
-  },
-  {
-   "id": "18128232118764156",
-   "item": "Royal living",
-   "category": "misc",
-   "caption_summary": "Royal living! Outside of 122 Madison st.",
-   "location_text": "of 122 Madison st",
-   "neighborhood": "Brooklyn",
-   "lat": 40.68414,
-   "lng": -73.9544,
-   "url": "https://www.instagram.com/p/Dd_jEixswT2/"
   }
  ]
 }
