@@ -1,7 +1,29 @@
 {
- "generated_at": "2026-11-03T20:07:22.341257-05:00",
+ "generated_at": "2026-11-03T20:38:02.266616-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18646868959041295",
+   "item": "Artsy mirror and fancy chandelier",
+   "category": "lamp",
+   "caption_summary": "Artsy mirror and fancy chandelier. 45 east 89th st.",
+   "location_text": "45 East 89th St",
+   "neighborhood": "Upper East Side",
+   "lat": 40.78302,
+   "lng": -73.95686,
+   "url": "https://www.instagram.com/p/DfTPTMSmt5v/"
+  },
+  {
+   "id": "17933628144443446",
+   "item": "Complete 1930 World Book Encyclopedia set with marbled edges",
+   "category": "books",
+   "caption_summary": "Complete 1930 World Book Encyclopedia set with marbled edges. I considered explaining what an encyclopedia was but thought I'd leave that to the comments. 😂 135 Charles St.",
+   "location_text": "135 Charles St",
+   "neighborhood": "West Village",
+   "lat": 40.73429,
+   "lng": -74.00772,
+   "url": "https://www.instagram.com/p/DfTRhyEsYY1/"
+  },
   {
    "id": "18201474940385046",
    "item": "On 3rd avenue, corner of 34st",
@@ -529,28 +551,6 @@
    "lat": 40.67279,
    "lng": -73.98676,
    "url": "https://www.instagram.com/p/DeFmkA6MsUS/"
-  },
-  {
-   "id": "18097769720106493",
-   "item": "Share with your favorite super NYC composter",
-   "category": "art",
-   "caption_summary": "Share with your favorite super NYC composter! Mott btw Prince and spring (behind the Elizabeth St Garden)",
-   "location_text": "",
-   "neighborhood": "",
-   "lat": null,
-   "lng": null,
-   "url": "https://www.instagram.com/p/DeLPecgMLBC/"
-  },
-  {
-   "id": "17909157237516402",
-   "item": "Oh how we love a little bar cart on wheels 😂",
-   "category": "misc",
-   "caption_summary": "Oh how we love a little bar cart on wheels 😂. on Flatbush Ave & Prospect Pl",
-   "location_text": "Flatbush Ave & Prospect Pl",
-   "neighborhood": "Flatbush",
-   "lat": 40.67862,
-   "lng": -73.9735,
-   "url": "https://www.instagram.com/p/DePzWN_sD6Y/"
   }
  ]
 }
