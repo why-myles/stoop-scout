@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-05T12:07:48.738338-05:00",
+ "generated_at": "2026-11-05T12:38:27.435660-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18111276394932715",
+   "item": "100% treasure inside right",
+   "category": "misc",
+   "caption_summary": "100% treasure inside right? Bleecker at Jones St",
+   "location_text": "Bleecker at Jones St",
+   "neighborhood": "West Village",
+   "lat": 40.73175,
+   "lng": -74.00327,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4023848365156556753"
+  },
   {
    "id": "18643896682029565",
    "item": "Great extendable table in front of 261 Prospect Place",
@@ -540,17 +551,6 @@
    "lat": 40.65771,
    "lng": -73.98284,
    "url": "https://www.instagram.com/p/Dd7FvC2MbWt/"
-  },
-  {
-   "id": "17982356199063976",
-   "item": "This and more at w 11th and 6th Ave",
-   "category": "misc",
-   "caption_summary": "This and more at w 11th and 6th Ave!",
-   "location_text": "w 11th and 6th Ave",
-   "neighborhood": "",
-   "lat": 40.73539,
-   "lng": -73.99827,
-   "url": "https://www.instagram.com/p/Dd9-qHeMBI9/"
   }
  ]
 }
