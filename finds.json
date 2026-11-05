@@ -1,7 +1,29 @@
 {
- "generated_at": "2026-11-05T18:08:55.473963-05:00",
+ "generated_at": "2026-11-05T18:40:15.506088-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18093135866234509",
+   "item": "Great Stooper narration and review",
+   "category": "misc",
+   "caption_summary": "Great Stooper narration and review! “Clean , heavy and still wired! Most likely still works cause they are built very well. Looked the button controls facing the street and they didnt feel loose!” 35 west 23rd.",
+   "location_text": "35 West 23rd St",
+   "neighborhood": "Flatiron",
+   "lat": 40.74229,
+   "lng": -73.99095,
+   "url": "https://www.instagram.com/reel/DfYL_KOsEKl/"
+  },
+  {
+   "id": "18080586977388703",
+   "item": "Get ready with me",
+   "category": "misc",
+   "caption_summary": "Get ready with me. Center market place between Broome and grand.",
+   "location_text": "Centre Market Place between Broome and Grand",
+   "neighborhood": "Little Italy",
+   "lat": 40.72071,
+   "lng": -73.99735,
+   "url": "https://www.instagram.com/p/DfYL1kqsJDN/"
+  },
   {
    "id": "18111276394932715",
    "item": "100% treasure inside right",
@@ -529,28 +551,6 @@
    "lat": 40.68817,
    "lng": -73.92711,
    "url": "https://www.instagram.com/p/De61yXYM_LJ/"
-  },
-  {
-   "id": "18145588255576456",
-   "item": "Nooooooo",
-   "category": "books",
-   "caption_summary": "Nooooooo. School Library books from an elementary school/ middle school. Ovington Ave and 4th avenue",
-   "location_text": "Ovington Ave and 4th avenue",
-   "neighborhood": "Brooklyn",
-   "lat": 40.63373,
-   "lng": -74.02388,
-   "url": "https://www.instagram.com/p/Dd7FA2msFPI/"
-  },
-  {
-   "id": "18011880407961347",
-   "item": "Ooooh",
-   "category": "misc",
-   "caption_summary": "Ooooh. Spring time blue in fall! 18th btw ppw and 10th!",
-   "location_text": "18th btw ppw and 10th",
-   "neighborhood": "Brooklyn",
-   "lat": 40.65771,
-   "lng": -73.98284,
-   "url": "https://www.instagram.com/p/De7FvC2MbWt/"
   }
  ]
 }
