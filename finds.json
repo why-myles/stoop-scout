@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-06T16:08:12.049533-05:00",
+ "generated_at": "2026-11-06T16:38:06.909165-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "18106018526383297",
+   "item": "110% worth running out into the rain for",
+   "category": "misc",
+   "caption_summary": "110% worth running out into the rain for!!! Wowzers! 60th btwn Amsterdam and Riverside",
+   "location_text": "60th btwn Amsterdam and Riverside",
+   "neighborhood": "Upper West Side",
+   "lat": 40.79565,
+   "lng": -73.96919,
+   "url": "https://www.instagram.com/p/DfalA1_Mx44/"
+  },
   {
    "id": "18495414556111989",
    "item": "Dresser + Lamp, 89th St btwn 3rd and Lex",
@@ -540,17 +551,6 @@
    "lat": null,
    "lng": null,
    "url": "https://www.instagram.com/p/DdxDGAumh5t/"
-  },
-  {
-   "id": "17937711330367715",
-   "item": "That’s one gorgeous chair",
-   "category": "seating",
-   "caption_summary": "That’s one gorgeous chair. 1101 39th street.",
-   "location_text": "39th street",
-   "neighborhood": "Brooklyn",
-   "lat": 40.64312,
-   "lng": -73.99015,
-   "url": "https://www.instagram.com/p/DdxObcfMuyJ/"
   }
  ]
 }
