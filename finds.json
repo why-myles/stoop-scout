@@ -1,7 +1,18 @@
 {
- "generated_at": "2026-11-07T13:38:30.827544-05:00",
+ "generated_at": "2026-11-07T14:08:16.703795-05:00",
  "source": "@stoopingnyc on Instagram",
  "finds": [
+  {
+   "id": "17924753238447146",
+   "item": "71 W 83rd st",
+   "category": "misc",
+   "caption_summary": "71 W 83rd st",
+   "location_text": "W 83rd st",
+   "neighborhood": "Upper West Side",
+   "lat": 40.78441,
+   "lng": -73.97304,
+   "url": "https://www.instagram.com/stories/stoopingnyc/4025331713288762145"
+  },
   {
    "id": "18122617835325200",
    "item": "Why is this so so perfect",
@@ -540,17 +551,6 @@
    "lat": 40.66327,
    "lng": -73.98458,
    "url": "https://www.instagram.com/reel/Db9JdAPsAJ-/"
-  },
-  {
-   "id": "18095733248423251",
-   "item": "Rescue before the rain",
-   "category": "misc",
-   "caption_summary": "Rescue before the rain! 522 w 134th Street!",
-   "location_text": "w 134th Street",
-   "neighborhood": "",
-   "lat": 40.81889,
-   "lng": -73.95452,
-   "url": "https://www.instagram.com/p/DduL-e4MibQ/"
   }
  ]
 }
